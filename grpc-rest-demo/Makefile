@@ -9,7 +9,7 @@ build_ts:
 		-I ./services \
 		./services/*.proto
 	protoc \
-		--plugin=protoc-gen-ts=`which protoc-gen-ts` \
+		--plugin=protoc-gen-ts=./node_modules/.bin/protoc-gen-ts \
 		--ts_out=grpc_js:./compiled-ts \
 		-I ./services \
 		./services/*.proto
