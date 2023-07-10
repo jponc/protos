@@ -8,6 +8,10 @@ brew install protobuf
 # Installs Go generator
 brew install protoc-gen-go
 brew install protoc-gen-go-grpc
+
+# Installs TS generator
+npm install -g grpc-tools
+npm install -g protoc-gen-ts
 ```
 
 # Building for Go (gRPC rest demo)
